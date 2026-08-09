@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O&M | EcoBuilders</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .project-list { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+    .project-card { display: grid; grid-template-columns: 320px 1fr; gap: 0; background: #fff; border: 1px solid #e2e8e3; border-radius: 6px; overflow: hidden; }
+    .project-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .project-body { padding: 1.6rem 1.8rem; display: flex; flex-direction: column; justify-content: center; }
+    .project-body h3 { margin: 0 0 0.45rem; font-size: 1.4rem; }
+    .project-body .tag { color: #2F6B4F; font-size: 1.05rem; font-weight: 700; margin: 0 0 0.6rem; }
+    .project-body p { margin: 0; font-size: 1.12rem; color: #5c665f; line-height: 1.45; max-width: 36em; }
+    @media (max-width: 700px) {
+      .project-card { grid-template-columns: 1fr; }
+      .project-card img { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="logo-link">
+        <img class="nav-logo-mark" src="../assets/ecobuilders-mark-white.png" alt="">
+        <span class="nav-logo-text">EcoBuilders</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#markets">Markets</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="btn btn-primary" href="mailto:ecobuilderspro@gmail.com?subject=Project%20Inquiry%20-%20EcoBuilders">Request a Proposal</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / O&M</div>
+      <h1>O&M</h1>
+      <p class="lead">Long-term performance depends on consistent monitoring and reliable field response. EcoBuilders keeps systems online, productive, safe, and compliant.</p>
+    </div>
+  </section>
+
+  <section class="service-content">
+    <div class="container">
+      <div class="eyebrow">Selected Work</div>
+      <div class="project-list">
+        <article class="project-card">
+          <img src="../assets/om-ev-charging.jpg" alt="EV Charging O&M">
+          <div class="project-body">
+            <h3>EV Charging O&M</h3>
+            <p class="tag">Portfolio service</p>
+            <p>Ongoing service to maximize uptime for DC fast and Level 2 systems.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="../assets/om-thermal-aerial.jpg" alt="Safety">
+          <div class="project-body">
+            <h3>Safety</h3>
+            <p class="tag">Thermal imaging</p>
+            <p>Aerial thermal imaging and proactive hazard detection.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="../assets/om-iv-tracer.png" alt="Compliance">
+          <div class="project-body">
+            <h3>Compliance</h3>
+            <p class="tag">Performance verification</p>
+            <p>Warranty compliance and documented testing including I-V curve tracing.</p>
+          </div>
+        </article>
+      </div>
+      <a href="../index.html#services" class="back-link">← Back to all services</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-link" style="margin-bottom:1rem">
+          <img class="nav-logo-mark" src="../assets/ecobuilders-mark-white.png" alt="">
+          <span class="nav-logo-text">EcoBuilders</span>
+        </div>
+        <p>Commercial EV charging, solar, energy storage, commissioning, O&amp;M and smart controls.</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p>Noah Schij<br><a href="mailto:ecobuilderspro@gmail.com">ecobuilderspro@gmail.com</a><br>(562) 507-1350<br>Seal Beach, CA</p>
+      </div>
+      <div>
+        <strong>License</strong>
+        <p>#889419</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>
