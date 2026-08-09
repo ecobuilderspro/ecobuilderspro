@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EV Charging Infrastructure | EcoBuilders</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="logo-link"><img class="nav-logo-mark" src="../assets/ecobuilders-logo-white.svg" alt=""><span class="nav-logo-text">EcoBuilders</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#markets">Markets</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="btn btn-primary" href="mailto:ecobuilderspro@gmail.com?subject=Project%20Inquiry%20-%20EcoBuilders">Request a Proposal</a>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / EV Charging Infrastructure</div>
+      <h1>EV Charging Infrastructure</h1>
+      <p class="lead">EcoBuilders installs and commissions EV charging systems for multifamily, workplace, fleet, and commercial sites. Charging speed is synced to real site conditions. It ramps up or down based on available solar, battery status, utility rates, and a fleet’s upcoming routes.</p>
+      <div class="service-photo" style="margin-top:2rem;border-radius:6px;overflow:hidden;max-width:800px">
+        <img src="../assets/ev-orange.jpg" alt="Orange-style EV charging outlets" style="width:100%;height:auto;display:block">
+      </div>
+    </div>
+  </section>
+  <section class="service-content">
+    <div class="container">
+      <a href="../index.html#services" class="back-link">← Back to all services</a>
+    </div>
+  </section>
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-link" style="margin-bottom:1rem"><img class="nav-logo-mark" src="../assets/ecobuilders-logo-white.svg" alt=""><span class="nav-logo-text">EcoBuilders</span></div>
+        <p>Commercial EV charging, solar, energy storage, commissioning, O&amp;M and smart controls.</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p>Noah Schij<br><a href="mailto:ecobuilderspro@gmail.com">ecobuilderspro@gmail.com</a><br>(562) 507-1350<br>Seal Beach, CA</p>
+      </div>
+      <div>
+        <strong>License</strong>
+        <p>#889419</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>
