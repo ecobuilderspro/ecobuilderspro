@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O&M | EcoBuilders</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="logo-link"><img class="nav-logo-mark" src="../assets/ecobuilders-mark-white.png" alt=""><span class="nav-logo-text">EcoBuilders</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#markets">Markets</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="btn btn-primary" href="mailto:ecobuilderspro@gmail.com?subject=Project%20Inquiry%20-%20EcoBuilders">Request a Proposal</a>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / O&M</div>
+      <h1>O&M</h1>
+      <p class="lead">Long-term performance depends on consistent monitoring and fast, reliable field response. EcoBuilders keeps EV charging, solar, and storage systems online, productive, safe, and compliant. Proactive design and maintenance strategies reduce the need for corrective repairs and emergency support.</p>
+      </div>
+  </section>
+  <section class="service-content">
+    <div class="container">
+      <div class="service-photo" style="margin:0 0 2rem;border-radius:6px;overflow:hidden;max-width:900px">
+        <img src="../assets/smart-ct.jpg" alt="Field monitoring equipment" style="width:100%;height:auto;display:block">
+      </div>
+
+      <a href="../index.html#services" class="back-link">← Back to all services</a>
+    </div>
+  </section>
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-link" style="margin-bottom:1rem"><img class="nav-logo-mark" src="../assets/ecobuilders-mark-white.png" alt=""><span class="nav-logo-text">EcoBuilders</span></div>
+        <p>Commercial EV charging, solar, energy storage, commissioning, O&amp;M and smart controls.</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p>Noah Schij<br><a href="mailto:ecobuilderspro@gmail.com">ecobuilderspro@gmail.com</a><br>(562) 507-1350<br>Seal Beach, CA</p>
+      </div>
+      <div>
+        <strong>License</strong>
+        <p>#889419</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>
